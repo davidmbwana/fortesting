@@ -5,7 +5,34 @@ module.exports.homelist = function(req, res){
 
 /*Get 'Locations-list' */
 module.exports.locationslist = function(req, res){
-  res.render('locations-list', { title: 'Home' });
+  res.render('locations-list', { title: 'Loc8tr - find a place to work with wifi',
+  pageHeader: { title: 'Loc8tr',strapline: 'Find places to work with wifi near you!'},
+  locations: [{
+    name: 'starcups',
+    address: '125 High Street, Reading, RG6 1PS',
+    rating: 3,
+    facilities: ['Hot drinks','Food','Premium wifi'],
+    distance: '100m'
+  },{
+    name: 'starcups2',
+    address: '125 High Street, Reading, RG6 1PS',
+    rating: 3,
+    facilities: ['Hot drinks','Food','Premium wifi'],
+    distance: '100m'
+  },{
+    name: 'starcups3',
+    address: '125 High Street, Reading, RG6 1PS',
+    rating: 3,
+    facilities: ['Hot drinks','Food','Premium wifi'],
+    distance: '100m'
+  },{
+    name: 'starcups4',
+    address: '125 High Street, Reading, RG6 1PS',
+    rating: 3,
+    facilities: ['Hot drinks','Food','Premium wifi'],
+    distance: '100m'
+  }]
+});
 };
 
 /*Get 'locations page' */
